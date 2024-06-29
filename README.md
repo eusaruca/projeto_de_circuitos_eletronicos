@@ -33,6 +33,9 @@ Para usar o sistema, siga este passo a passo:
 2. Para verificar se está funcionando corretamente, clique em cima do sensor de temperatura e mude-a para maior que 35 ºC;
 3. Se o LED vermelho acender e a buzina começar a tocar, o sistema estará funcionando corretamente.
 
+https://github.com/eusaruca/projeto_de_circuitos_eletronicos/assets/144628825/fe2dbd14-33c0-4627-9602-0362e77e281f
+
+*Vídeo*: Simulação em funcionamento.
 # Contribuindo
 Contribuições são sempre bem-vindas. Se encontrar algum problema ou tiver alguma sugestão de melhorias, faça uma solicitação pull.
 
