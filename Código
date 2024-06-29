@@ -1,0 +1,32 @@
+int led = 10; //entrada do LED
+int TMP = A0; //entrada do sensor de temperatura  
+int valorTMP = 0; //valor do sensor de temperatura
+int buzina = 7; //entrada da buzina
+
+void setup ()
+{
+  pinMode(led, INPUT);
+  pinMode(buzina, INPUT);
+  pinMode(TMP, INPUT);
+  Serial.begin(9600); //a velocidade da simulação ocorrerá em 9600 bits por segundo
+}
+
+void loop ()
+{
+  valorTMP = analogRead(TMP);
+  
+  Serial.print("Temperatura: ");
+  Serial.println(valorTMP);
+
+ if (valorTMP >=174){ //valor equivalente aos 35ºC de acordo com o monitor serial do TinkerCad
+  digitalWrite(led, HIGH);
+  tone (buzina, 3);
+  delay (500);
+  noTone(buzina);
+  delay (500);
+}
+  else {
+   digitalWrite(led, LOW);
+   noTone(buzina);
+  }
+}
